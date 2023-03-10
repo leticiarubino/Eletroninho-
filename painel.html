@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Painel de Controle - Eletroninho </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <style>
+
+body{
+    margin: 0;
+    background-color: rgb(194, 193, 193);;
+}
+body * {
+    box-sizing: border-box;
+
+}
+#total{
+background-size: cover;
+width:100%;
+align-items: baseline;
+justify-content: center;
+padding: 10px;
+min-height: 100vh;
+margin:0;
+}
+            
+#funcoes{
+width: 100vw;
+height: 100vh;
+display:flex;
+align-items: center;
+justify-content:space-between; 
+margin: 0 auto;              
+
+}
+
+#ico1, #ico2, #ico3{
+width: 100%;
+float: left;
+font-family: Tahoma;
+margin-left:11%;
+margin-top:-15%;
+}
+
+#ico1, #ico2, #ico3 h3{
+ width:100%;
+}
+
+#total .btn{
+    padding: 2px 19px;
+    background:#a0a0a0;
+    color:#000000;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+}
+
+#total .btn:hover{
+    background: #ffffff;
+    transform: scale(1.1);
+
+}
+@media only screen and (max-width:950px){
+    #funcoes{
+    display: grid;
+    width: 100%;
+    }
+    #ico1, #ico2, #ico3{
+        padding: 45px;
+        margin: 0 auto;
+        margin-left: 105%;
+    
+    }
+ 
+}
+@media only screen and (max-width:600px){
+    #funcoes{
+    display: grid;
+    width: 100%;
+    height: auto;
+    }
+    #ico1, #ico2, #ico3{
+        padding: 45px;
+        margin: 0 auto;
+       
+    
+    }
+}
+@media only screen and (max-width:500px){
+
+#funcoes{
+display: grid;
+width: 100%;
+height: auto;
+}
+#ico1, #ico2, #ico3{
+    padding: 45px;
+    margin: 0 auto;
+   
+
+}
+}
+@media only screen and (max-width:414px){
+
+#funcoes{
+display: grid;
+width: 100%;
+height: auto;
+}
+#ico1, #ico2, #ico3{
+    padding: 45px;
+    margin: 0 auto;
+   
+
+}
+}
+
+@media only screen and (max-width:300px){
+
+    #funcoes{
+    display: grid;
+    width: 100%;
+    height: auto;
+    }
+    #ico1, #ico2, #ico3{
+        padding: 45px;
+        margin: 0 auto;
+       
+    
+    }
+}
+
+
+
+
+    
+</style>
+</head>
+
+    <body>
+        <div id= "total">
+            <a href="login.php" class="btn">SAIR</a>
+               <div id="funcoes">
+                      <div id="ico1">
+                        <a href="cadfuncionario.html"><img src="img/funicon.png" width="100" height="100"> </a>
+                        <a href="listarfunc.php"><img src="img/listaicon.png" width="100" height="100"> </a>
+                    <h3>Funcionários | Listar</h3>
+                    </div>
+
+                    <div id="ico2">
+                        <a href="cadcliente.html"><img src="img/clienteicon.png" width="100" height="100"> </a>
+                        <a href="listarcliente.php"><img src="img/listaicon.png" width="100" height="100"> </a>
+                         <h3> Clientes | Listar </h3>
+                    </div>
+
+                    <div id="ico3">
+                            <a href="cadproduto.html"><img src="img/produtoicon.png" width="100" height="100"> </a>
+                            <a href="listarproduto.php"><img src="img/listaicon.png" width="100" height="100"> </a>
+                           <h3> Produtos | Listar </h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+  
+
+    </body>
+
+</html>
